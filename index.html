@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pomodoro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='icon' type="png" href="images/timer.png">
+</head>
+<body>
+        <h1 id="status">Work Time</h1>
+        <div id="clockdiv">
+          <div>
+            <span class="hours"></span>
+            
+          </div>
+          <div>
+            <span class="minutes"></span>
+            
+          </div>
+          <div>
+            <span class="seconds"></span>
+            
+          </div>
+        </div>
+      
+        <div id="timer-length">
+          <div id="session-div">
+              <p>Session</p>
+              <div id="session-down"><</div>
+              <div id="session-time"></div>
+              <div id="session-up"> ></div>
+          </div>
+          <div id="break-div">
+              <p>Break</p>
+              <div id="break-down"><</div>
+              <div id="break-time"></div>
+              <div id="break-up">></div>
+          </div>               
+      </div>
+      <div id="buttons">
+       <input type="image" src='images/play.png' class="button-style" id="play-btn"></button>
+       <input type="image" src='images/pause.png' class="button-style" id="pause-btn"></button>
+       <input type="image" src='images/stop.png' class="button-style" id="stop-btn"></button>
+      </div>
+        
+    <script src='main.js'></script>
+</body>
+</html>

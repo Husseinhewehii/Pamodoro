@@ -1,0 +1,207 @@
+body{
+    background: url(images/coffee.jpg) no-repeat center center fixed; 
+ background-size: cover;
+   overflow: hidden;
+}
+
+h1{
+   color: yellow;
+   font-weight: 100;
+   font-family: sans-serif;
+   letter-spacing: 3px;
+   font-size: 3em;
+   text-align: center;
+   margin-top: 70px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-shadow: 0px 0px 10px black;
+}
+
+#clockdiv{
+   display: flex;
+}
+
+.hours{
+   color: yellow;
+   font-size: 14vw;
+   text-shadow: 0px 0px 10px #fff;
+   font-family: 'Roboto', sans-serif;
+   margin-left: 19vw;
+}
+
+.hours::after {
+  content: " :";
+}
+
+
+.minutes{
+   color:yellow;
+   font-size: 14vw;
+   text-shadow: 0px 0px 10px white;
+   font-family: 'Roboto', sans-serif;
+ margin-left: 30px;
+}
+
+.minutes::after {
+  content: " :";
+}
+.seconds{
+   color: yellow;
+   font-size: 14vw;
+   text-shadow: 0px 0px 10px #fff;
+   font-family: 'Roboto', sans-serif;
+ margin-left: 30px;
+}
+
+@media(max-width: 1000px){
+   .hours{
+       margin-left: 16vw;
+   }
+   .smalltext{
+       margin-left: 5vw;
+   }
+}
+
+
+
+
+
+
+.smalltext{
+   color:white;
+   z-index: 99;
+   margin-top: 10px;
+   position: absolute;
+   font-size: 2em;
+   font-weight: 100;
+   letter-spacing: 1px;
+   margin-left: 25vw;
+   text-shadow: 0px 0px 100px khaki;
+   font-family: 'Roboto', sans-serif;
+   
+}
+
+
+.smalltext2{
+   color:white;
+   z-index: 99;
+   margin-top: 10px;
+   position: absolute;
+   font-size: 2em;
+   font-weight: 100;
+   letter-spacing: 1px;
+   margin-left: 60px;
+   text-shadow: 0px 0px 100px khaki;
+   font-family: 'Roboto', sans-serif;
+}
+
+.smalltext3{
+   color:white;
+   z-index: 99;
+   margin-top: 10px;
+   position: absolute;
+   font-size: 2em;
+   font-weight: 100;
+   letter-spacing: 1px;
+   margin-left: 70px;
+   text-shadow: 0px 0px 100px khaki;
+   font-family: 'Roboto', sans-serif;
+   
+}
+
+#buttons {
+   position: relative;
+   text-align: center;
+   bottom:15px;
+ }
+
+/* 
+ button{
+    width: 90px;
+    margin:0 10px;
+ } */
+
+ .button-style {
+   width: 90px;
+   margin: 0 10px;
+   border: none;
+   border-radius: 55px;
+   font-size: 1.1em;
+   font-weight: 500;
+   cursor: pointer;
+   background-color: rgb(230, 245, 22);   
+   text-shadow: 0px 0px 10px #fff;
+ }
+ 
+
+
+ .button-style:hover {
+   /* opacity: 0.8; */
+   -ms-transform: scale(2, 3); /* IE 9 */
+   -webkit-transform: scale(2, 3); /* Safari */
+   transform: scale(1.05, 1.05);
+   background-color: white;
+ }
+ 
+
+
+.active_blue{
+   background-color: rgba(61, 58, 240, 0.89);
+   -ms-transform: scale(2, 3); /* IE 9 */
+   -webkit-transform: scale(2, 3); /* Safari */
+   transform: scale(1.05, 1.05);
+}
+
+.active_red{
+   background-color: rgba(167, 26, 26, 0.89);
+   -ms-transform: scale(2, 3); /* IE 9 */
+   -webkit-transform: scale(2, 3); /* Safari */
+   transform: scale(1.05, 1.05);
+}
+
+.active_blue:hover,.active_red:hover{
+   background-color: white;
+}
+
+ 
+/*Timer Increase*/
+
+#timer-length {
+   display: flex;
+   position: relative;
+   top:30px;
+ }
+ 
+p{
+   position: relative;
+   top:10%;
+}
+ #timer-length div {
+   font-size: 1.9em;
+   text-align: center;
+ }
+ 
+ #timer-length #session-div div,
+ #timer-length #break-div div {
+   display: inline-block;
+   width: 50px;
+   margin:15px;
+ }
+
+ #session-div, #break-div {
+   display: inline-block;
+   text-align: center;
+   margin: 0 auto;
+   color:yellow;
+   font-weight: 1000;
+   text-shadow: 0px 0px 10px black;
+ }
+ 
+ #session-down, #session-up,
+ #break-down, #break-up {
+    cursor: pointer;
+  }
+
+#session-down:hover, #session-up:hover,
+#break-down:hover, #break-up:hover{
+  color:white;
+}
